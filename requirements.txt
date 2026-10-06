@@ -1,0 +1,7 @@
+# Core HTTP & Web Scraping Dependencies
+requests==2.33.1
+beautifulsoup4==4.14.3
+lxml==6.0.4
+
+# Testing Framework
+pytest==9.1.1

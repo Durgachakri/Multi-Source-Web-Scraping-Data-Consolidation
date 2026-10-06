@@ -1,0 +1,480 @@
+2026-10-06 15:03:51 [INFO] [root] ==============================================================
+2026-10-06 15:03:51 [INFO] [root] Starting Multi-Source Web Scraping ETL Pipeline
+2026-10-06 15:03:51 [INFO] [root] Configuration: source=all, delay=0.50s, max_pages=1
+2026-10-06 15:03:51 [INFO] [root] ==============================================================
+2026-10-06 15:03:51 [INFO] [pipeline.books] Initializing Books to Scrape extraction stage...
+2026-10-06 15:03:51 [INFO] [scraper.books] Starting Books to Scrape extraction from https://books.toscrape.com/
+2026-10-06 15:03:51 [INFO] [scraper.books] Scraping Books page 1: https://books.toscrape.com/
+2026-10-06 15:03:52 [INFO] [scraper.books] Extracted 20 book items from page 1 (total so far: 20)
+2026-10-06 15:03:52 [INFO] [scraper.books] Reached configured page limit of 1. Stopping Books scraper.
+2026-10-06 15:03:52 [INFO] [scraper.books] Completed Books scraping. Total records extracted: 20
+2026-10-06 15:03:52 [INFO] [pipeline.books] Books extraction finished successfully with 20 records.
+2026-10-06 15:03:52 [INFO] [pipeline.quotes] Initializing Quotes to Scrape extraction stage...
+2026-10-06 15:03:52 [INFO] [scraper.quotes] Starting Quotes to Scrape extraction from https://quotes.toscrape.com/
+2026-10-06 15:03:52 [INFO] [scraper.quotes] Scraping Quotes page 1: https://quotes.toscrape.com/
+2026-10-06 15:03:53 [INFO] [scraper.quotes] Extracted 10 quote items from page 1 (total so far: 10)
+2026-10-06 15:03:53 [INFO] [scraper.quotes] Reached configured page limit of 1. Stopping Quotes scraper.
+2026-10-06 15:03:53 [INFO] [scraper.quotes] Completed Quotes scraping. Total records extracted: 10
+2026-10-06 15:03:53 [INFO] [pipeline.quotes] Quotes extraction finished successfully with 10 records.
+2026-10-06 15:03:53 [INFO] [root] Pipeline Stage: Cleaning and schema standardization...
+2026-10-06 15:03:53 [INFO] [root] Pipeline Stage: Validating records against schema and business rules...
+2026-10-06 15:03:53 [INFO] [root] Pipeline Stage: Deterministic fingerprint deduplication...
+2026-10-06 15:03:53 [INFO] [root] Duplicate check complete: 0 duplicate records detected.
+2026-10-06 15:03:53 [INFO] [root] Pipeline Stage: Generating output artifacts...
+2026-10-06 15:03:53 [INFO] [pipeline.save_csv] Saved 30 records to CSV: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 15:03:53 [INFO] [pipeline.save_summary] Saved summary report to JSON: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\summary_report.json
+2026-10-06 15:03:53 [INFO] [root] ==============================================================
+2026-10-06 15:03:53 [INFO] [root] ETL Pipeline Execution Finished Successfully!
+2026-10-06 15:03:53 [INFO] [root] Total Duration: 2.68 seconds
+2026-10-06 15:03:53 [INFO] [root] Sources Extracted: Books=20, Quotes=10
+2026-10-06 15:03:53 [INFO] [root] Validation: Valid=30, Rejected=0
+2026-10-06 15:03:53 [INFO] [root] Deduplication: Duplicates Found=0
+2026-10-06 15:03:53 [INFO] [root] Final Cleaned Dataset: 30 records in C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 15:03:53 [INFO] [root] ==============================================================
+2026-10-06 15:04:34 [INFO] [root] ==============================================================
+2026-10-06 15:04:34 [INFO] [root] Starting Multi-Source Web Scraping ETL Pipeline
+2026-10-06 15:04:34 [INFO] [root] Configuration: source=all, delay=0.50s, max_pages=None
+2026-10-06 15:04:34 [INFO] [root] ==============================================================
+2026-10-06 15:04:34 [INFO] [pipeline.books] Initializing Books to Scrape extraction stage...
+2026-10-06 15:04:34 [INFO] [scraper.books] Starting Books to Scrape extraction from https://books.toscrape.com/
+2026-10-06 15:04:34 [INFO] [scraper.books] Scraping Books page 1: https://books.toscrape.com/
+2026-10-06 15:04:36 [INFO] [scraper.books] Extracted 20 book items from page 1 (total so far: 20)
+2026-10-06 15:04:36 [INFO] [scraper.books] Scraping Books page 2: https://books.toscrape.com/catalogue/page-2.html
+2026-10-06 15:04:36 [INFO] [scraper.books] Extracted 20 book items from page 2 (total so far: 40)
+2026-10-06 15:04:36 [INFO] [scraper.books] Scraping Books page 3: https://books.toscrape.com/catalogue/page-3.html
+2026-10-06 15:04:36 [INFO] [scraper.books] Extracted 20 book items from page 3 (total so far: 60)
+2026-10-06 15:04:36 [INFO] [scraper.books] Scraping Books page 4: https://books.toscrape.com/catalogue/page-4.html
+2026-10-06 15:04:37 [INFO] [scraper.books] Extracted 20 book items from page 4 (total so far: 80)
+2026-10-06 15:04:37 [INFO] [scraper.books] Scraping Books page 5: https://books.toscrape.com/catalogue/page-5.html
+2026-10-06 15:04:37 [INFO] [scraper.books] Extracted 20 book items from page 5 (total so far: 100)
+2026-10-06 15:04:37 [INFO] [scraper.books] Scraping Books page 6: https://books.toscrape.com/catalogue/page-6.html
+2026-10-06 15:04:38 [INFO] [scraper.books] Extracted 20 book items from page 6 (total so far: 120)
+2026-10-06 15:04:38 [INFO] [scraper.books] Scraping Books page 7: https://books.toscrape.com/catalogue/page-7.html
+2026-10-06 15:04:39 [INFO] [scraper.books] Extracted 20 book items from page 7 (total so far: 140)
+2026-10-06 15:04:39 [INFO] [scraper.books] Scraping Books page 8: https://books.toscrape.com/catalogue/page-8.html
+2026-10-06 15:04:39 [INFO] [scraper.books] Extracted 20 book items from page 8 (total so far: 160)
+2026-10-06 15:04:39 [INFO] [scraper.books] Scraping Books page 9: https://books.toscrape.com/catalogue/page-9.html
+2026-10-06 15:04:40 [INFO] [scraper.books] Extracted 20 book items from page 9 (total so far: 180)
+2026-10-06 15:04:40 [INFO] [scraper.books] Scraping Books page 10: https://books.toscrape.com/catalogue/page-10.html
+2026-10-06 15:04:40 [INFO] [scraper.books] Extracted 20 book items from page 10 (total so far: 200)
+2026-10-06 15:04:40 [INFO] [scraper.books] Scraping Books page 11: https://books.toscrape.com/catalogue/page-11.html
+2026-10-06 15:04:41 [INFO] [scraper.books] Extracted 20 book items from page 11 (total so far: 220)
+2026-10-06 15:04:41 [INFO] [scraper.books] Scraping Books page 12: https://books.toscrape.com/catalogue/page-12.html
+2026-10-06 15:04:41 [INFO] [scraper.books] Extracted 20 book items from page 12 (total so far: 240)
+2026-10-06 15:04:41 [INFO] [scraper.books] Scraping Books page 13: https://books.toscrape.com/catalogue/page-13.html
+2026-10-06 15:04:42 [INFO] [scraper.books] Extracted 20 book items from page 13 (total so far: 260)
+2026-10-06 15:04:42 [INFO] [scraper.books] Scraping Books page 14: https://books.toscrape.com/catalogue/page-14.html
+2026-10-06 15:04:42 [INFO] [scraper.books] Extracted 20 book items from page 14 (total so far: 280)
+2026-10-06 15:04:42 [INFO] [scraper.books] Scraping Books page 15: https://books.toscrape.com/catalogue/page-15.html
+2026-10-06 15:04:43 [INFO] [scraper.books] Extracted 20 book items from page 15 (total so far: 300)
+2026-10-06 15:04:43 [INFO] [scraper.books] Scraping Books page 16: https://books.toscrape.com/catalogue/page-16.html
+2026-10-06 15:04:43 [INFO] [scraper.books] Extracted 20 book items from page 16 (total so far: 320)
+2026-10-06 15:04:43 [INFO] [scraper.books] Scraping Books page 17: https://books.toscrape.com/catalogue/page-17.html
+2026-10-06 15:04:44 [INFO] [scraper.books] Extracted 20 book items from page 17 (total so far: 340)
+2026-10-06 15:04:44 [INFO] [scraper.books] Scraping Books page 18: https://books.toscrape.com/catalogue/page-18.html
+2026-10-06 15:04:44 [INFO] [scraper.books] Extracted 20 book items from page 18 (total so far: 360)
+2026-10-06 15:04:44 [INFO] [scraper.books] Scraping Books page 19: https://books.toscrape.com/catalogue/page-19.html
+2026-10-06 15:04:45 [INFO] [scraper.books] Extracted 20 book items from page 19 (total so far: 380)
+2026-10-06 15:04:45 [INFO] [scraper.books] Scraping Books page 20: https://books.toscrape.com/catalogue/page-20.html
+2026-10-06 15:04:45 [INFO] [scraper.books] Extracted 20 book items from page 20 (total so far: 400)
+2026-10-06 15:04:45 [INFO] [scraper.books] Scraping Books page 21: https://books.toscrape.com/catalogue/page-21.html
+2026-10-06 15:04:46 [INFO] [scraper.books] Extracted 20 book items from page 21 (total so far: 420)
+2026-10-06 15:04:46 [INFO] [scraper.books] Scraping Books page 22: https://books.toscrape.com/catalogue/page-22.html
+2026-10-06 15:04:47 [INFO] [scraper.books] Extracted 20 book items from page 22 (total so far: 440)
+2026-10-06 15:04:47 [INFO] [scraper.books] Scraping Books page 23: https://books.toscrape.com/catalogue/page-23.html
+2026-10-06 15:04:47 [INFO] [scraper.books] Extracted 20 book items from page 23 (total so far: 460)
+2026-10-06 15:04:47 [INFO] [scraper.books] Scraping Books page 24: https://books.toscrape.com/catalogue/page-24.html
+2026-10-06 15:04:48 [INFO] [scraper.books] Extracted 20 book items from page 24 (total so far: 480)
+2026-10-06 15:04:48 [INFO] [scraper.books] Scraping Books page 25: https://books.toscrape.com/catalogue/page-25.html
+2026-10-06 15:04:48 [INFO] [scraper.books] Extracted 20 book items from page 25 (total so far: 500)
+2026-10-06 15:04:48 [INFO] [scraper.books] Scraping Books page 26: https://books.toscrape.com/catalogue/page-26.html
+2026-10-06 15:04:49 [INFO] [scraper.books] Extracted 20 book items from page 26 (total so far: 520)
+2026-10-06 15:04:49 [INFO] [scraper.books] Scraping Books page 27: https://books.toscrape.com/catalogue/page-27.html
+2026-10-06 15:04:50 [INFO] [scraper.books] Extracted 20 book items from page 27 (total so far: 540)
+2026-10-06 15:04:50 [INFO] [scraper.books] Scraping Books page 28: https://books.toscrape.com/catalogue/page-28.html
+2026-10-06 15:04:50 [INFO] [scraper.books] Extracted 20 book items from page 28 (total so far: 560)
+2026-10-06 15:04:50 [INFO] [scraper.books] Scraping Books page 29: https://books.toscrape.com/catalogue/page-29.html
+2026-10-06 15:04:51 [INFO] [scraper.books] Extracted 20 book items from page 29 (total so far: 580)
+2026-10-06 15:04:51 [INFO] [scraper.books] Scraping Books page 30: https://books.toscrape.com/catalogue/page-30.html
+2026-10-06 15:04:51 [INFO] [scraper.books] Extracted 20 book items from page 30 (total so far: 600)
+2026-10-06 15:04:51 [INFO] [scraper.books] Scraping Books page 31: https://books.toscrape.com/catalogue/page-31.html
+2026-10-06 15:04:52 [INFO] [scraper.books] Extracted 20 book items from page 31 (total so far: 620)
+2026-10-06 15:04:52 [INFO] [scraper.books] Scraping Books page 32: https://books.toscrape.com/catalogue/page-32.html
+2026-10-06 15:04:52 [INFO] [scraper.books] Extracted 20 book items from page 32 (total so far: 640)
+2026-10-06 15:04:52 [INFO] [scraper.books] Scraping Books page 33: https://books.toscrape.com/catalogue/page-33.html
+2026-10-06 15:04:53 [INFO] [scraper.books] Extracted 20 book items from page 33 (total so far: 660)
+2026-10-06 15:04:53 [INFO] [scraper.books] Scraping Books page 34: https://books.toscrape.com/catalogue/page-34.html
+2026-10-06 15:04:53 [INFO] [scraper.books] Extracted 20 book items from page 34 (total so far: 680)
+2026-10-06 15:04:53 [INFO] [scraper.books] Scraping Books page 35: https://books.toscrape.com/catalogue/page-35.html
+2026-10-06 15:04:54 [INFO] [scraper.books] Extracted 20 book items from page 35 (total so far: 700)
+2026-10-06 15:04:54 [INFO] [scraper.books] Scraping Books page 36: https://books.toscrape.com/catalogue/page-36.html
+2026-10-06 15:04:54 [INFO] [scraper.books] Extracted 20 book items from page 36 (total so far: 720)
+2026-10-06 15:04:54 [INFO] [scraper.books] Scraping Books page 37: https://books.toscrape.com/catalogue/page-37.html
+2026-10-06 15:04:55 [INFO] [scraper.books] Extracted 20 book items from page 37 (total so far: 740)
+2026-10-06 15:04:55 [INFO] [scraper.books] Scraping Books page 38: https://books.toscrape.com/catalogue/page-38.html
+2026-10-06 15:04:55 [INFO] [scraper.books] Extracted 20 book items from page 38 (total so far: 760)
+2026-10-06 15:04:55 [INFO] [scraper.books] Scraping Books page 39: https://books.toscrape.com/catalogue/page-39.html
+2026-10-06 15:04:56 [INFO] [scraper.books] Extracted 20 book items from page 39 (total so far: 780)
+2026-10-06 15:04:56 [INFO] [scraper.books] Scraping Books page 40: https://books.toscrape.com/catalogue/page-40.html
+2026-10-06 15:04:57 [INFO] [scraper.books] Extracted 20 book items from page 40 (total so far: 800)
+2026-10-06 15:04:57 [INFO] [scraper.books] Scraping Books page 41: https://books.toscrape.com/catalogue/page-41.html
+2026-10-06 15:04:57 [INFO] [scraper.books] Extracted 20 book items from page 41 (total so far: 820)
+2026-10-06 15:04:57 [INFO] [scraper.books] Scraping Books page 42: https://books.toscrape.com/catalogue/page-42.html
+2026-10-06 15:04:58 [INFO] [scraper.books] Extracted 20 book items from page 42 (total so far: 840)
+2026-10-06 15:04:58 [INFO] [scraper.books] Scraping Books page 43: https://books.toscrape.com/catalogue/page-43.html
+2026-10-06 15:04:58 [INFO] [scraper.books] Extracted 20 book items from page 43 (total so far: 860)
+2026-10-06 15:04:58 [INFO] [scraper.books] Scraping Books page 44: https://books.toscrape.com/catalogue/page-44.html
+2026-10-06 15:04:59 [INFO] [scraper.books] Extracted 20 book items from page 44 (total so far: 880)
+2026-10-06 15:04:59 [INFO] [scraper.books] Scraping Books page 45: https://books.toscrape.com/catalogue/page-45.html
+2026-10-06 15:04:59 [INFO] [scraper.books] Extracted 20 book items from page 45 (total so far: 900)
+2026-10-06 15:04:59 [INFO] [scraper.books] Scraping Books page 46: https://books.toscrape.com/catalogue/page-46.html
+2026-10-06 15:05:00 [INFO] [scraper.books] Extracted 20 book items from page 46 (total so far: 920)
+2026-10-06 15:05:00 [INFO] [scraper.books] Scraping Books page 47: https://books.toscrape.com/catalogue/page-47.html
+2026-10-06 15:05:00 [INFO] [scraper.books] Extracted 20 book items from page 47 (total so far: 940)
+2026-10-06 15:05:00 [INFO] [scraper.books] Scraping Books page 48: https://books.toscrape.com/catalogue/page-48.html
+2026-10-06 15:05:01 [INFO] [scraper.books] Extracted 20 book items from page 48 (total so far: 960)
+2026-10-06 15:05:01 [INFO] [scraper.books] Scraping Books page 49: https://books.toscrape.com/catalogue/page-49.html
+2026-10-06 15:05:02 [INFO] [scraper.books] Extracted 20 book items from page 49 (total so far: 980)
+2026-10-06 15:05:02 [INFO] [scraper.books] Scraping Books page 50: https://books.toscrape.com/catalogue/page-50.html
+2026-10-06 15:05:02 [INFO] [scraper.books] Extracted 20 book items from page 50 (total so far: 1000)
+2026-10-06 15:05:02 [INFO] [scraper.books] No next page link found. Books pagination finished at page 50.
+2026-10-06 15:05:02 [INFO] [scraper.books] Completed Books scraping. Total records extracted: 1000
+2026-10-06 15:05:02 [INFO] [pipeline.books] Books extraction finished successfully with 1000 records.
+2026-10-06 15:05:02 [INFO] [pipeline.quotes] Initializing Quotes to Scrape extraction stage...
+2026-10-06 15:05:02 [INFO] [scraper.quotes] Starting Quotes to Scrape extraction from https://quotes.toscrape.com/
+2026-10-06 15:05:02 [INFO] [scraper.quotes] Scraping Quotes page 1: https://quotes.toscrape.com/
+2026-10-06 15:05:03 [INFO] [scraper.quotes] Extracted 10 quote items from page 1 (total so far: 10)
+2026-10-06 15:05:03 [INFO] [scraper.quotes] Scraping Quotes page 2: https://quotes.toscrape.com/page/2/
+2026-10-06 15:05:03 [INFO] [scraper.quotes] Extracted 10 quote items from page 2 (total so far: 20)
+2026-10-06 15:05:03 [INFO] [scraper.quotes] Scraping Quotes page 3: https://quotes.toscrape.com/page/3/
+2026-10-06 15:05:04 [INFO] [scraper.quotes] Extracted 10 quote items from page 3 (total so far: 30)
+2026-10-06 15:05:04 [INFO] [scraper.quotes] Scraping Quotes page 4: https://quotes.toscrape.com/page/4/
+2026-10-06 15:05:04 [INFO] [scraper.quotes] Extracted 10 quote items from page 4 (total so far: 40)
+2026-10-06 15:05:04 [INFO] [scraper.quotes] Scraping Quotes page 5: https://quotes.toscrape.com/page/5/
+2026-10-06 15:05:05 [INFO] [scraper.quotes] Extracted 10 quote items from page 5 (total so far: 50)
+2026-10-06 15:05:05 [INFO] [scraper.quotes] Scraping Quotes page 6: https://quotes.toscrape.com/page/6/
+2026-10-06 15:05:05 [INFO] [scraper.quotes] Extracted 10 quote items from page 6 (total so far: 60)
+2026-10-06 15:05:05 [INFO] [scraper.quotes] Scraping Quotes page 7: https://quotes.toscrape.com/page/7/
+2026-10-06 15:05:06 [INFO] [scraper.quotes] Extracted 10 quote items from page 7 (total so far: 70)
+2026-10-06 15:05:06 [INFO] [scraper.quotes] Scraping Quotes page 8: https://quotes.toscrape.com/page/8/
+2026-10-06 15:05:06 [INFO] [scraper.quotes] Extracted 10 quote items from page 8 (total so far: 80)
+2026-10-06 15:05:06 [INFO] [scraper.quotes] Scraping Quotes page 9: https://quotes.toscrape.com/page/9/
+2026-10-06 15:05:07 [INFO] [scraper.quotes] Extracted 10 quote items from page 9 (total so far: 90)
+2026-10-06 15:05:07 [INFO] [scraper.quotes] Scraping Quotes page 10: https://quotes.toscrape.com/page/10/
+2026-10-06 15:05:07 [INFO] [scraper.quotes] Extracted 10 quote items from page 10 (total so far: 100)
+2026-10-06 15:05:07 [INFO] [scraper.quotes] No next page link found. Quotes pagination finished at page 10.
+2026-10-06 15:05:07 [INFO] [scraper.quotes] Completed Quotes scraping. Total records extracted: 100
+2026-10-06 15:05:07 [INFO] [pipeline.quotes] Quotes extraction finished successfully with 100 records.
+2026-10-06 15:05:07 [INFO] [root] Pipeline Stage: Cleaning and schema standardization...
+2026-10-06 15:05:07 [INFO] [root] Pipeline Stage: Validating records against schema and business rules...
+2026-10-06 15:05:08 [INFO] [root] Pipeline Stage: Deterministic fingerprint deduplication...
+2026-10-06 15:05:08 [WARNING] [root] Identified and excluded 1 duplicate records from final dataset.
+2026-10-06 15:05:08 [INFO] [root] Pipeline Stage: Generating output artifacts...
+2026-10-06 15:05:08 [INFO] [pipeline.save_csv] Saved 1099 records to CSV: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 15:05:08 [INFO] [pipeline.save_summary] Saved summary report to JSON: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\summary_report.json
+2026-10-06 15:05:08 [INFO] [root] ==============================================================
+2026-10-06 15:05:08 [INFO] [root] ETL Pipeline Execution Finished Successfully!
+2026-10-06 15:05:08 [INFO] [root] Total Duration: 33.48 seconds
+2026-10-06 15:05:08 [INFO] [root] Sources Extracted: Books=1000, Quotes=100
+2026-10-06 15:05:08 [INFO] [root] Validation: Valid=1100, Rejected=0
+2026-10-06 15:05:08 [INFO] [root] Deduplication: Duplicates Found=1
+2026-10-06 15:05:08 [INFO] [root] Final Cleaned Dataset: 1099 records in C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 15:05:08 [INFO] [root] ==============================================================
+2026-10-06 15:09:50 [INFO] [root] ==============================================================
+2026-10-06 15:09:50 [INFO] [root] Starting Multi-Source Web Scraping ETL Pipeline
+2026-10-06 15:09:50 [INFO] [root] Configuration: source=all, delay=0.50s, max_pages=None
+2026-10-06 15:09:50 [INFO] [root] ==============================================================
+2026-10-06 15:09:50 [INFO] [pipeline.books] Initializing Books to Scrape extraction stage...
+2026-10-06 15:09:50 [INFO] [scraper.books] Starting Books to Scrape extraction from https://books.toscrape.com/
+2026-10-06 15:09:50 [INFO] [scraper.books] Scraping Books page 1: https://books.toscrape.com/
+2026-10-06 15:09:51 [INFO] [scraper.books] Extracted 20 book items from page 1 (total so far: 20)
+2026-10-06 15:09:51 [INFO] [scraper.books] Scraping Books page 2: https://books.toscrape.com/catalogue/page-2.html
+2026-10-06 15:09:52 [INFO] [scraper.books] Extracted 20 book items from page 2 (total so far: 40)
+2026-10-06 15:09:52 [INFO] [scraper.books] Scraping Books page 3: https://books.toscrape.com/catalogue/page-3.html
+2026-10-06 15:09:52 [INFO] [scraper.books] Extracted 20 book items from page 3 (total so far: 60)
+2026-10-06 15:09:52 [INFO] [scraper.books] Scraping Books page 4: https://books.toscrape.com/catalogue/page-4.html
+2026-10-06 15:09:53 [INFO] [scraper.books] Extracted 20 book items from page 4 (total so far: 80)
+2026-10-06 15:09:53 [INFO] [scraper.books] Scraping Books page 5: https://books.toscrape.com/catalogue/page-5.html
+2026-10-06 15:09:54 [INFO] [scraper.books] Extracted 20 book items from page 5 (total so far: 100)
+2026-10-06 15:09:54 [INFO] [scraper.books] Scraping Books page 6: https://books.toscrape.com/catalogue/page-6.html
+2026-10-06 15:09:55 [INFO] [scraper.books] Extracted 20 book items from page 6 (total so far: 120)
+2026-10-06 15:09:55 [INFO] [scraper.books] Scraping Books page 7: https://books.toscrape.com/catalogue/page-7.html
+2026-10-06 15:09:55 [INFO] [scraper.books] Extracted 20 book items from page 7 (total so far: 140)
+2026-10-06 15:09:55 [INFO] [scraper.books] Scraping Books page 8: https://books.toscrape.com/catalogue/page-8.html
+2026-10-06 15:09:56 [INFO] [scraper.books] Extracted 20 book items from page 8 (total so far: 160)
+2026-10-06 15:09:56 [INFO] [scraper.books] Scraping Books page 9: https://books.toscrape.com/catalogue/page-9.html
+2026-10-06 15:09:57 [INFO] [scraper.books] Extracted 20 book items from page 9 (total so far: 180)
+2026-10-06 15:09:57 [INFO] [scraper.books] Scraping Books page 10: https://books.toscrape.com/catalogue/page-10.html
+2026-10-06 15:09:57 [INFO] [scraper.books] Extracted 20 book items from page 10 (total so far: 200)
+2026-10-06 15:09:57 [INFO] [scraper.books] Scraping Books page 11: https://books.toscrape.com/catalogue/page-11.html
+2026-10-06 15:09:58 [INFO] [scraper.books] Extracted 20 book items from page 11 (total so far: 220)
+2026-10-06 15:09:58 [INFO] [scraper.books] Scraping Books page 12: https://books.toscrape.com/catalogue/page-12.html
+2026-10-06 15:09:58 [INFO] [scraper.books] Extracted 20 book items from page 12 (total so far: 240)
+2026-10-06 15:09:58 [INFO] [scraper.books] Scraping Books page 13: https://books.toscrape.com/catalogue/page-13.html
+2026-10-06 15:09:59 [INFO] [scraper.books] Extracted 20 book items from page 13 (total so far: 260)
+2026-10-06 15:09:59 [INFO] [scraper.books] Scraping Books page 14: https://books.toscrape.com/catalogue/page-14.html
+2026-10-06 15:09:59 [INFO] [scraper.books] Extracted 20 book items from page 14 (total so far: 280)
+2026-10-06 15:10:00 [INFO] [scraper.books] Scraping Books page 15: https://books.toscrape.com/catalogue/page-15.html
+2026-10-06 15:10:00 [INFO] [scraper.books] Extracted 20 book items from page 15 (total so far: 300)
+2026-10-06 15:10:00 [INFO] [scraper.books] Scraping Books page 16: https://books.toscrape.com/catalogue/page-16.html
+2026-10-06 15:10:01 [INFO] [scraper.books] Extracted 20 book items from page 16 (total so far: 320)
+2026-10-06 15:10:01 [INFO] [scraper.books] Scraping Books page 17: https://books.toscrape.com/catalogue/page-17.html
+2026-10-06 15:10:01 [INFO] [scraper.books] Extracted 20 book items from page 17 (total so far: 340)
+2026-10-06 15:10:01 [INFO] [scraper.books] Scraping Books page 18: https://books.toscrape.com/catalogue/page-18.html
+2026-10-06 15:10:02 [INFO] [scraper.books] Extracted 20 book items from page 18 (total so far: 360)
+2026-10-06 15:10:02 [INFO] [scraper.books] Scraping Books page 19: https://books.toscrape.com/catalogue/page-19.html
+2026-10-06 15:10:02 [INFO] [scraper.books] Extracted 20 book items from page 19 (total so far: 380)
+2026-10-06 15:10:02 [INFO] [scraper.books] Scraping Books page 20: https://books.toscrape.com/catalogue/page-20.html
+2026-10-06 15:10:03 [INFO] [scraper.books] Extracted 20 book items from page 20 (total so far: 400)
+2026-10-06 15:10:03 [INFO] [scraper.books] Scraping Books page 21: https://books.toscrape.com/catalogue/page-21.html
+2026-10-06 15:10:03 [INFO] [scraper.books] Extracted 20 book items from page 21 (total so far: 420)
+2026-10-06 15:10:03 [INFO] [scraper.books] Scraping Books page 22: https://books.toscrape.com/catalogue/page-22.html
+2026-10-06 15:10:04 [INFO] [scraper.books] Extracted 20 book items from page 22 (total so far: 440)
+2026-10-06 15:10:04 [INFO] [scraper.books] Scraping Books page 23: https://books.toscrape.com/catalogue/page-23.html
+2026-10-06 15:10:04 [INFO] [scraper.books] Extracted 20 book items from page 23 (total so far: 460)
+2026-10-06 15:10:04 [INFO] [scraper.books] Scraping Books page 24: https://books.toscrape.com/catalogue/page-24.html
+2026-10-06 15:10:05 [INFO] [scraper.books] Extracted 20 book items from page 24 (total so far: 480)
+2026-10-06 15:10:05 [INFO] [scraper.books] Scraping Books page 25: https://books.toscrape.com/catalogue/page-25.html
+2026-10-06 15:10:05 [INFO] [scraper.books] Extracted 20 book items from page 25 (total so far: 500)
+2026-10-06 15:10:05 [INFO] [scraper.books] Scraping Books page 26: https://books.toscrape.com/catalogue/page-26.html
+2026-10-06 15:10:06 [INFO] [scraper.books] Extracted 20 book items from page 26 (total so far: 520)
+2026-10-06 15:10:06 [INFO] [scraper.books] Scraping Books page 27: https://books.toscrape.com/catalogue/page-27.html
+2026-10-06 15:10:06 [INFO] [scraper.books] Extracted 20 book items from page 27 (total so far: 540)
+2026-10-06 15:10:06 [INFO] [scraper.books] Scraping Books page 28: https://books.toscrape.com/catalogue/page-28.html
+2026-10-06 15:10:07 [INFO] [scraper.books] Extracted 20 book items from page 28 (total so far: 560)
+2026-10-06 15:10:07 [INFO] [scraper.books] Scraping Books page 29: https://books.toscrape.com/catalogue/page-29.html
+2026-10-06 15:10:08 [INFO] [scraper.books] Extracted 20 book items from page 29 (total so far: 580)
+2026-10-06 15:10:08 [INFO] [scraper.books] Scraping Books page 30: https://books.toscrape.com/catalogue/page-30.html
+2026-10-06 15:10:08 [INFO] [scraper.books] Extracted 20 book items from page 30 (total so far: 600)
+2026-10-06 15:10:08 [INFO] [scraper.books] Scraping Books page 31: https://books.toscrape.com/catalogue/page-31.html
+2026-10-06 15:10:09 [INFO] [scraper.books] Extracted 20 book items from page 31 (total so far: 620)
+2026-10-06 15:10:09 [INFO] [scraper.books] Scraping Books page 32: https://books.toscrape.com/catalogue/page-32.html
+2026-10-06 15:10:09 [INFO] [scraper.books] Extracted 20 book items from page 32 (total so far: 640)
+2026-10-06 15:10:09 [INFO] [scraper.books] Scraping Books page 33: https://books.toscrape.com/catalogue/page-33.html
+2026-10-06 15:10:10 [INFO] [scraper.books] Extracted 20 book items from page 33 (total so far: 660)
+2026-10-06 15:10:10 [INFO] [scraper.books] Scraping Books page 34: https://books.toscrape.com/catalogue/page-34.html
+2026-10-06 15:10:11 [INFO] [scraper.books] Extracted 20 book items from page 34 (total so far: 680)
+2026-10-06 15:10:11 [INFO] [scraper.books] Scraping Books page 35: https://books.toscrape.com/catalogue/page-35.html
+2026-10-06 15:10:11 [INFO] [scraper.books] Extracted 20 book items from page 35 (total so far: 700)
+2026-10-06 15:10:11 [INFO] [scraper.books] Scraping Books page 36: https://books.toscrape.com/catalogue/page-36.html
+2026-10-06 15:10:12 [INFO] [scraper.books] Extracted 20 book items from page 36 (total so far: 720)
+2026-10-06 15:10:12 [INFO] [scraper.books] Scraping Books page 37: https://books.toscrape.com/catalogue/page-37.html
+2026-10-06 15:10:12 [INFO] [scraper.books] Extracted 20 book items from page 37 (total so far: 740)
+2026-10-06 15:10:12 [INFO] [scraper.books] Scraping Books page 38: https://books.toscrape.com/catalogue/page-38.html
+2026-10-06 15:10:13 [INFO] [scraper.books] Extracted 20 book items from page 38 (total so far: 760)
+2026-10-06 15:10:13 [INFO] [scraper.books] Scraping Books page 39: https://books.toscrape.com/catalogue/page-39.html
+2026-10-06 15:10:13 [INFO] [scraper.books] Extracted 20 book items from page 39 (total so far: 780)
+2026-10-06 15:10:13 [INFO] [scraper.books] Scraping Books page 40: https://books.toscrape.com/catalogue/page-40.html
+2026-10-06 15:10:14 [INFO] [scraper.books] Extracted 20 book items from page 40 (total so far: 800)
+2026-10-06 15:10:14 [INFO] [scraper.books] Scraping Books page 41: https://books.toscrape.com/catalogue/page-41.html
+2026-10-06 15:10:14 [INFO] [scraper.books] Extracted 20 book items from page 41 (total so far: 820)
+2026-10-06 15:10:14 [INFO] [scraper.books] Scraping Books page 42: https://books.toscrape.com/catalogue/page-42.html
+2026-10-06 15:10:15 [INFO] [scraper.books] Extracted 20 book items from page 42 (total so far: 840)
+2026-10-06 15:10:15 [INFO] [scraper.books] Scraping Books page 43: https://books.toscrape.com/catalogue/page-43.html
+2026-10-06 15:10:15 [INFO] [scraper.books] Extracted 20 book items from page 43 (total so far: 860)
+2026-10-06 15:10:15 [INFO] [scraper.books] Scraping Books page 44: https://books.toscrape.com/catalogue/page-44.html
+2026-10-06 15:10:16 [INFO] [scraper.books] Extracted 20 book items from page 44 (total so far: 880)
+2026-10-06 15:10:16 [INFO] [scraper.books] Scraping Books page 45: https://books.toscrape.com/catalogue/page-45.html
+2026-10-06 15:10:16 [INFO] [scraper.books] Extracted 20 book items from page 45 (total so far: 900)
+2026-10-06 15:10:16 [INFO] [scraper.books] Scraping Books page 46: https://books.toscrape.com/catalogue/page-46.html
+2026-10-06 15:10:17 [INFO] [scraper.books] Extracted 20 book items from page 46 (total so far: 920)
+2026-10-06 15:10:17 [INFO] [scraper.books] Scraping Books page 47: https://books.toscrape.com/catalogue/page-47.html
+2026-10-06 15:10:17 [INFO] [scraper.books] Extracted 20 book items from page 47 (total so far: 940)
+2026-10-06 15:10:17 [INFO] [scraper.books] Scraping Books page 48: https://books.toscrape.com/catalogue/page-48.html
+2026-10-06 15:10:18 [INFO] [scraper.books] Extracted 20 book items from page 48 (total so far: 960)
+2026-10-06 15:10:18 [INFO] [scraper.books] Scraping Books page 49: https://books.toscrape.com/catalogue/page-49.html
+2026-10-06 15:10:19 [INFO] [scraper.books] Extracted 20 book items from page 49 (total so far: 980)
+2026-10-06 15:10:19 [INFO] [scraper.books] Scraping Books page 50: https://books.toscrape.com/catalogue/page-50.html
+2026-10-06 15:10:20 [INFO] [scraper.books] Extracted 20 book items from page 50 (total so far: 1000)
+2026-10-06 15:10:20 [INFO] [scraper.books] No next page link found. Books pagination finished at page 50.
+2026-10-06 15:10:20 [INFO] [scraper.books] Completed Books scraping. Total records extracted: 1000
+2026-10-06 15:10:20 [INFO] [pipeline.books] Books extraction finished successfully with 1000 records.
+2026-10-06 15:10:20 [INFO] [pipeline.quotes] Initializing Quotes to Scrape extraction stage...
+2026-10-06 15:10:20 [INFO] [scraper.quotes] Starting Quotes to Scrape extraction from https://quotes.toscrape.com/
+2026-10-06 15:10:20 [INFO] [scraper.quotes] Scraping Quotes page 1: https://quotes.toscrape.com/
+2026-10-06 15:10:21 [INFO] [scraper.quotes] Extracted 10 quote items from page 1 (total so far: 10)
+2026-10-06 15:10:21 [INFO] [scraper.quotes] Scraping Quotes page 2: https://quotes.toscrape.com/page/2/
+2026-10-06 15:10:21 [INFO] [scraper.quotes] Extracted 10 quote items from page 2 (total so far: 20)
+2026-10-06 15:10:21 [INFO] [scraper.quotes] Scraping Quotes page 3: https://quotes.toscrape.com/page/3/
+2026-10-06 15:10:22 [INFO] [scraper.quotes] Extracted 10 quote items from page 3 (total so far: 30)
+2026-10-06 15:10:22 [INFO] [scraper.quotes] Scraping Quotes page 4: https://quotes.toscrape.com/page/4/
+2026-10-06 15:10:22 [INFO] [scraper.quotes] Extracted 10 quote items from page 4 (total so far: 40)
+2026-10-06 15:10:22 [INFO] [scraper.quotes] Scraping Quotes page 5: https://quotes.toscrape.com/page/5/
+2026-10-06 15:10:23 [INFO] [scraper.quotes] Extracted 10 quote items from page 5 (total so far: 50)
+2026-10-06 15:10:23 [INFO] [scraper.quotes] Scraping Quotes page 6: https://quotes.toscrape.com/page/6/
+2026-10-06 15:10:23 [INFO] [scraper.quotes] Extracted 10 quote items from page 6 (total so far: 60)
+2026-10-06 15:10:23 [INFO] [scraper.quotes] Scraping Quotes page 7: https://quotes.toscrape.com/page/7/
+2026-10-06 15:10:24 [INFO] [scraper.quotes] Extracted 10 quote items from page 7 (total so far: 70)
+2026-10-06 15:10:24 [INFO] [scraper.quotes] Scraping Quotes page 8: https://quotes.toscrape.com/page/8/
+2026-10-06 15:10:24 [INFO] [scraper.quotes] Extracted 10 quote items from page 8 (total so far: 80)
+2026-10-06 15:10:24 [INFO] [scraper.quotes] Scraping Quotes page 9: https://quotes.toscrape.com/page/9/
+2026-10-06 15:10:25 [INFO] [scraper.quotes] Extracted 10 quote items from page 9 (total so far: 90)
+2026-10-06 15:10:25 [INFO] [scraper.quotes] Scraping Quotes page 10: https://quotes.toscrape.com/page/10/
+2026-10-06 15:10:25 [INFO] [scraper.quotes] Extracted 10 quote items from page 10 (total so far: 100)
+2026-10-06 15:10:25 [INFO] [scraper.quotes] No next page link found. Quotes pagination finished at page 10.
+2026-10-06 15:10:25 [INFO] [scraper.quotes] Completed Quotes scraping. Total records extracted: 100
+2026-10-06 15:10:25 [INFO] [pipeline.quotes] Quotes extraction finished successfully with 100 records.
+2026-10-06 15:10:25 [INFO] [root] Pipeline Stage: Cleaning and schema standardization...
+2026-10-06 15:10:25 [INFO] [root] Pipeline Stage: Validating records against schema and business rules...
+2026-10-06 15:10:25 [INFO] [root] Pipeline Stage: Deterministic fingerprint deduplication...
+2026-10-06 15:10:25 [WARNING] [root] Identified and excluded 1 duplicate records from final dataset.
+2026-10-06 15:10:25 [INFO] [root] Pipeline Stage: Generating output artifacts...
+2026-10-06 15:10:25 [INFO] [pipeline.save_csv] Saved 1099 records to CSV: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 15:10:25 [INFO] [pipeline.save_summary] Saved summary report to JSON: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\summary_report.json
+2026-10-06 15:10:25 [INFO] [root] ==============================================================
+2026-10-06 15:10:25 [INFO] [root] ETL Pipeline Execution Finished Successfully!
+2026-10-06 15:10:25 [INFO] [root] Total Duration: 35.46 seconds
+2026-10-06 15:10:25 [INFO] [root] Sources Extracted: Books=1000, Quotes=100
+2026-10-06 15:10:25 [INFO] [root] Validation: Valid=1100, Rejected=0
+2026-10-06 15:10:25 [INFO] [root] Deduplication: Duplicates Found=1
+2026-10-06 15:10:25 [INFO] [root] Final Cleaned Dataset: 1099 records in C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 15:10:25 [INFO] [root] ==============================================================
+2026-10-06 19:05:52 [INFO] [root] ==============================================================
+2026-10-06 19:05:52 [INFO] [root] Starting Multi-Source Web Scraping ETL Pipeline
+2026-10-06 19:05:52 [INFO] [root] Configuration: source=all, delay=0.50s, max_pages=None
+2026-10-06 19:05:52 [INFO] [root] ==============================================================
+2026-10-06 19:05:52 [INFO] [pipeline.books] Initializing Books to Scrape extraction stage...
+2026-10-06 19:05:52 [INFO] [scraper.books] Starting Books to Scrape extraction from https://books.toscrape.com/
+2026-10-06 19:05:52 [INFO] [scraper.books] Scraping Books page 1: https://books.toscrape.com/
+2026-10-06 19:05:53 [INFO] [scraper.books] Extracted 20 book items from page 1 (total so far: 20)
+2026-10-06 19:05:53 [INFO] [scraper.books] Scraping Books page 2: https://books.toscrape.com/catalogue/page-2.html
+2026-10-06 19:05:54 [INFO] [scraper.books] Extracted 20 book items from page 2 (total so far: 40)
+2026-10-06 19:05:54 [INFO] [scraper.books] Scraping Books page 3: https://books.toscrape.com/catalogue/page-3.html
+2026-10-06 19:05:54 [INFO] [scraper.books] Extracted 20 book items from page 3 (total so far: 60)
+2026-10-06 19:05:54 [INFO] [scraper.books] Scraping Books page 4: https://books.toscrape.com/catalogue/page-4.html
+2026-10-06 19:05:55 [INFO] [scraper.books] Extracted 20 book items from page 4 (total so far: 80)
+2026-10-06 19:05:55 [INFO] [scraper.books] Scraping Books page 5: https://books.toscrape.com/catalogue/page-5.html
+2026-10-06 19:05:56 [INFO] [scraper.books] Extracted 20 book items from page 5 (total so far: 100)
+2026-10-06 19:05:56 [INFO] [scraper.books] Scraping Books page 6: https://books.toscrape.com/catalogue/page-6.html
+2026-10-06 19:05:56 [INFO] [scraper.books] Extracted 20 book items from page 6 (total so far: 120)
+2026-10-06 19:05:56 [INFO] [scraper.books] Scraping Books page 7: https://books.toscrape.com/catalogue/page-7.html
+2026-10-06 19:05:57 [INFO] [scraper.books] Extracted 20 book items from page 7 (total so far: 140)
+2026-10-06 19:05:57 [INFO] [scraper.books] Scraping Books page 8: https://books.toscrape.com/catalogue/page-8.html
+2026-10-06 19:05:58 [INFO] [scraper.books] Extracted 20 book items from page 8 (total so far: 160)
+2026-10-06 19:05:58 [INFO] [scraper.books] Scraping Books page 9: https://books.toscrape.com/catalogue/page-9.html
+2026-10-06 19:05:58 [INFO] [scraper.books] Extracted 20 book items from page 9 (total so far: 180)
+2026-10-06 19:05:58 [INFO] [scraper.books] Scraping Books page 10: https://books.toscrape.com/catalogue/page-10.html
+2026-10-06 19:05:59 [INFO] [scraper.books] Extracted 20 book items from page 10 (total so far: 200)
+2026-10-06 19:05:59 [INFO] [scraper.books] Scraping Books page 11: https://books.toscrape.com/catalogue/page-11.html
+2026-10-06 19:05:59 [INFO] [scraper.books] Extracted 20 book items from page 11 (total so far: 220)
+2026-10-06 19:05:59 [INFO] [scraper.books] Scraping Books page 12: https://books.toscrape.com/catalogue/page-12.html
+2026-10-06 19:06:00 [INFO] [scraper.books] Extracted 20 book items from page 12 (total so far: 240)
+2026-10-06 19:06:00 [INFO] [scraper.books] Scraping Books page 13: https://books.toscrape.com/catalogue/page-13.html
+2026-10-06 19:06:00 [INFO] [scraper.books] Extracted 20 book items from page 13 (total so far: 260)
+2026-10-06 19:06:00 [INFO] [scraper.books] Scraping Books page 14: https://books.toscrape.com/catalogue/page-14.html
+2026-10-06 19:06:01 [INFO] [scraper.books] Extracted 20 book items from page 14 (total so far: 280)
+2026-10-06 19:06:01 [INFO] [scraper.books] Scraping Books page 15: https://books.toscrape.com/catalogue/page-15.html
+2026-10-06 19:06:01 [INFO] [scraper.books] Extracted 20 book items from page 15 (total so far: 300)
+2026-10-06 19:06:01 [INFO] [scraper.books] Scraping Books page 16: https://books.toscrape.com/catalogue/page-16.html
+2026-10-06 19:06:02 [INFO] [scraper.books] Extracted 20 book items from page 16 (total so far: 320)
+2026-10-06 19:06:02 [INFO] [scraper.books] Scraping Books page 17: https://books.toscrape.com/catalogue/page-17.html
+2026-10-06 19:06:03 [INFO] [scraper.books] Extracted 20 book items from page 17 (total so far: 340)
+2026-10-06 19:06:03 [INFO] [scraper.books] Scraping Books page 18: https://books.toscrape.com/catalogue/page-18.html
+2026-10-06 19:06:03 [INFO] [scraper.books] Extracted 20 book items from page 18 (total so far: 360)
+2026-10-06 19:06:03 [INFO] [scraper.books] Scraping Books page 19: https://books.toscrape.com/catalogue/page-19.html
+2026-10-06 19:06:04 [INFO] [scraper.books] Extracted 20 book items from page 19 (total so far: 380)
+2026-10-06 19:06:04 [INFO] [scraper.books] Scraping Books page 20: https://books.toscrape.com/catalogue/page-20.html
+2026-10-06 19:06:04 [INFO] [scraper.books] Extracted 20 book items from page 20 (total so far: 400)
+2026-10-06 19:06:04 [INFO] [scraper.books] Scraping Books page 21: https://books.toscrape.com/catalogue/page-21.html
+2026-10-06 19:06:05 [INFO] [scraper.books] Extracted 20 book items from page 21 (total so far: 420)
+2026-10-06 19:06:05 [INFO] [scraper.books] Scraping Books page 22: https://books.toscrape.com/catalogue/page-22.html
+2026-10-06 19:06:05 [INFO] [scraper.books] Extracted 20 book items from page 22 (total so far: 440)
+2026-10-06 19:06:05 [INFO] [scraper.books] Scraping Books page 23: https://books.toscrape.com/catalogue/page-23.html
+2026-10-06 19:06:06 [INFO] [scraper.books] Extracted 20 book items from page 23 (total so far: 460)
+2026-10-06 19:06:06 [INFO] [scraper.books] Scraping Books page 24: https://books.toscrape.com/catalogue/page-24.html
+2026-10-06 19:06:06 [INFO] [scraper.books] Extracted 20 book items from page 24 (total so far: 480)
+2026-10-06 19:06:06 [INFO] [scraper.books] Scraping Books page 25: https://books.toscrape.com/catalogue/page-25.html
+2026-10-06 19:06:07 [INFO] [scraper.books] Extracted 20 book items from page 25 (total so far: 500)
+2026-10-06 19:06:07 [INFO] [scraper.books] Scraping Books page 26: https://books.toscrape.com/catalogue/page-26.html
+2026-10-06 19:06:07 [INFO] [scraper.books] Extracted 20 book items from page 26 (total so far: 520)
+2026-10-06 19:06:07 [INFO] [scraper.books] Scraping Books page 27: https://books.toscrape.com/catalogue/page-27.html
+2026-10-06 19:06:08 [INFO] [scraper.books] Extracted 20 book items from page 27 (total so far: 540)
+2026-10-06 19:06:08 [INFO] [scraper.books] Scraping Books page 28: https://books.toscrape.com/catalogue/page-28.html
+2026-10-06 19:06:08 [INFO] [scraper.books] Extracted 20 book items from page 28 (total so far: 560)
+2026-10-06 19:06:08 [INFO] [scraper.books] Scraping Books page 29: https://books.toscrape.com/catalogue/page-29.html
+2026-10-06 19:06:09 [INFO] [scraper.books] Extracted 20 book items from page 29 (total so far: 580)
+2026-10-06 19:06:09 [INFO] [scraper.books] Scraping Books page 30: https://books.toscrape.com/catalogue/page-30.html
+2026-10-06 19:06:09 [INFO] [scraper.books] Extracted 20 book items from page 30 (total so far: 600)
+2026-10-06 19:06:09 [INFO] [scraper.books] Scraping Books page 31: https://books.toscrape.com/catalogue/page-31.html
+2026-10-06 19:06:10 [INFO] [scraper.books] Extracted 20 book items from page 31 (total so far: 620)
+2026-10-06 19:06:10 [INFO] [scraper.books] Scraping Books page 32: https://books.toscrape.com/catalogue/page-32.html
+2026-10-06 19:06:12 [INFO] [scraper.books] Extracted 20 book items from page 32 (total so far: 640)
+2026-10-06 19:06:12 [INFO] [scraper.books] Scraping Books page 33: https://books.toscrape.com/catalogue/page-33.html
+2026-10-06 19:06:12 [INFO] [scraper.books] Extracted 20 book items from page 33 (total so far: 660)
+2026-10-06 19:06:12 [INFO] [scraper.books] Scraping Books page 34: https://books.toscrape.com/catalogue/page-34.html
+2026-10-06 19:06:13 [INFO] [scraper.books] Extracted 20 book items from page 34 (total so far: 680)
+2026-10-06 19:06:13 [INFO] [scraper.books] Scraping Books page 35: https://books.toscrape.com/catalogue/page-35.html
+2026-10-06 19:06:13 [INFO] [scraper.books] Extracted 20 book items from page 35 (total so far: 700)
+2026-10-06 19:06:13 [INFO] [scraper.books] Scraping Books page 36: https://books.toscrape.com/catalogue/page-36.html
+2026-10-06 19:06:14 [INFO] [scraper.books] Extracted 20 book items from page 36 (total so far: 720)
+2026-10-06 19:06:14 [INFO] [scraper.books] Scraping Books page 37: https://books.toscrape.com/catalogue/page-37.html
+2026-10-06 19:06:14 [INFO] [scraper.books] Extracted 20 book items from page 37 (total so far: 740)
+2026-10-06 19:06:14 [INFO] [scraper.books] Scraping Books page 38: https://books.toscrape.com/catalogue/page-38.html
+2026-10-06 19:06:15 [INFO] [scraper.books] Extracted 20 book items from page 38 (total so far: 760)
+2026-10-06 19:06:15 [INFO] [scraper.books] Scraping Books page 39: https://books.toscrape.com/catalogue/page-39.html
+2026-10-06 19:06:16 [INFO] [scraper.books] Extracted 20 book items from page 39 (total so far: 780)
+2026-10-06 19:06:16 [INFO] [scraper.books] Scraping Books page 40: https://books.toscrape.com/catalogue/page-40.html
+2026-10-06 19:06:16 [INFO] [scraper.books] Extracted 20 book items from page 40 (total so far: 800)
+2026-10-06 19:06:16 [INFO] [scraper.books] Scraping Books page 41: https://books.toscrape.com/catalogue/page-41.html
+2026-10-06 19:06:17 [INFO] [scraper.books] Extracted 20 book items from page 41 (total so far: 820)
+2026-10-06 19:06:17 [INFO] [scraper.books] Scraping Books page 42: https://books.toscrape.com/catalogue/page-42.html
+2026-10-06 19:06:17 [INFO] [scraper.books] Extracted 20 book items from page 42 (total so far: 840)
+2026-10-06 19:06:17 [INFO] [scraper.books] Scraping Books page 43: https://books.toscrape.com/catalogue/page-43.html
+2026-10-06 19:06:18 [INFO] [scraper.books] Extracted 20 book items from page 43 (total so far: 860)
+2026-10-06 19:06:18 [INFO] [scraper.books] Scraping Books page 44: https://books.toscrape.com/catalogue/page-44.html
+2026-10-06 19:06:18 [INFO] [scraper.books] Extracted 20 book items from page 44 (total so far: 880)
+2026-10-06 19:06:18 [INFO] [scraper.books] Scraping Books page 45: https://books.toscrape.com/catalogue/page-45.html
+2026-10-06 19:06:19 [INFO] [scraper.books] Extracted 20 book items from page 45 (total so far: 900)
+2026-10-06 19:06:19 [INFO] [scraper.books] Scraping Books page 46: https://books.toscrape.com/catalogue/page-46.html
+2026-10-06 19:06:19 [INFO] [scraper.books] Extracted 20 book items from page 46 (total so far: 920)
+2026-10-06 19:06:19 [INFO] [scraper.books] Scraping Books page 47: https://books.toscrape.com/catalogue/page-47.html
+2026-10-06 19:06:20 [INFO] [scraper.books] Extracted 20 book items from page 47 (total so far: 940)
+2026-10-06 19:06:20 [INFO] [scraper.books] Scraping Books page 48: https://books.toscrape.com/catalogue/page-48.html
+2026-10-06 19:06:20 [INFO] [scraper.books] Extracted 20 book items from page 48 (total so far: 960)
+2026-10-06 19:06:20 [INFO] [scraper.books] Scraping Books page 49: https://books.toscrape.com/catalogue/page-49.html
+2026-10-06 19:06:21 [INFO] [scraper.books] Extracted 20 book items from page 49 (total so far: 980)
+2026-10-06 19:06:21 [INFO] [scraper.books] Scraping Books page 50: https://books.toscrape.com/catalogue/page-50.html
+2026-10-06 19:06:21 [INFO] [scraper.books] Extracted 20 book items from page 50 (total so far: 1000)
+2026-10-06 19:06:21 [INFO] [scraper.books] No next page link found. Books pagination finished at page 50.
+2026-10-06 19:06:21 [INFO] [scraper.books] Completed Books scraping. Total records extracted: 1000
+2026-10-06 19:06:21 [INFO] [pipeline.books] Books extraction finished successfully with 1000 records.
+2026-10-06 19:06:21 [INFO] [pipeline.quotes] Initializing Quotes to Scrape extraction stage...
+2026-10-06 19:06:21 [INFO] [scraper.quotes] Starting Quotes to Scrape extraction from https://quotes.toscrape.com/
+2026-10-06 19:06:21 [INFO] [scraper.quotes] Scraping Quotes page 1: https://quotes.toscrape.com/
+2026-10-06 19:06:22 [INFO] [scraper.quotes] Extracted 10 quote items from page 1 (total so far: 10)
+2026-10-06 19:06:22 [INFO] [scraper.quotes] Scraping Quotes page 2: https://quotes.toscrape.com/page/2/
+2026-10-06 19:06:23 [INFO] [scraper.quotes] Extracted 10 quote items from page 2 (total so far: 20)
+2026-10-06 19:06:23 [INFO] [scraper.quotes] Scraping Quotes page 3: https://quotes.toscrape.com/page/3/
+2026-10-06 19:06:23 [INFO] [scraper.quotes] Extracted 10 quote items from page 3 (total so far: 30)
+2026-10-06 19:06:23 [INFO] [scraper.quotes] Scraping Quotes page 4: https://quotes.toscrape.com/page/4/
+2026-10-06 19:06:24 [INFO] [scraper.quotes] Extracted 10 quote items from page 4 (total so far: 40)
+2026-10-06 19:06:24 [INFO] [scraper.quotes] Scraping Quotes page 5: https://quotes.toscrape.com/page/5/
+2026-10-06 19:06:24 [INFO] [scraper.quotes] Extracted 10 quote items from page 5 (total so far: 50)
+2026-10-06 19:06:24 [INFO] [scraper.quotes] Scraping Quotes page 6: https://quotes.toscrape.com/page/6/
+2026-10-06 19:06:25 [INFO] [scraper.quotes] Extracted 10 quote items from page 6 (total so far: 60)
+2026-10-06 19:06:25 [INFO] [scraper.quotes] Scraping Quotes page 7: https://quotes.toscrape.com/page/7/
+2026-10-06 19:06:25 [INFO] [scraper.quotes] Extracted 10 quote items from page 7 (total so far: 70)
+2026-10-06 19:06:25 [INFO] [scraper.quotes] Scraping Quotes page 8: https://quotes.toscrape.com/page/8/
+2026-10-06 19:06:26 [INFO] [scraper.quotes] Extracted 10 quote items from page 8 (total so far: 80)
+2026-10-06 19:06:26 [INFO] [scraper.quotes] Scraping Quotes page 9: https://quotes.toscrape.com/page/9/
+2026-10-06 19:06:26 [INFO] [scraper.quotes] Extracted 10 quote items from page 9 (total so far: 90)
+2026-10-06 19:06:26 [INFO] [scraper.quotes] Scraping Quotes page 10: https://quotes.toscrape.com/page/10/
+2026-10-06 19:06:27 [INFO] [scraper.quotes] Extracted 10 quote items from page 10 (total so far: 100)
+2026-10-06 19:06:27 [INFO] [scraper.quotes] No next page link found. Quotes pagination finished at page 10.
+2026-10-06 19:06:27 [INFO] [scraper.quotes] Completed Quotes scraping. Total records extracted: 100
+2026-10-06 19:06:27 [INFO] [pipeline.quotes] Quotes extraction finished successfully with 100 records.
+2026-10-06 19:06:27 [INFO] [root] Pipeline Stage: Cleaning and schema standardization...
+2026-10-06 19:06:27 [INFO] [root] Pipeline Stage: Validating records against schema and business rules...
+2026-10-06 19:06:27 [INFO] [root] Pipeline Stage: Deterministic fingerprint deduplication...
+2026-10-06 19:06:27 [WARNING] [root] Identified and excluded 1 duplicate records from final dataset.
+2026-10-06 19:06:27 [INFO] [root] Pipeline Stage: Generating output artifacts...
+2026-10-06 19:06:27 [INFO] [pipeline.save_csv] Saved 1099 records to CSV: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 19:06:27 [INFO] [pipeline.save_summary] Saved summary report to JSON: C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\summary_report.json
+2026-10-06 19:06:27 [INFO] [root] ==============================================================
+2026-10-06 19:06:27 [INFO] [root] ETL Pipeline Execution Finished Successfully!
+2026-10-06 19:06:27 [INFO] [root] Total Duration: 34.70 seconds
+2026-10-06 19:06:27 [INFO] [root] Sources Extracted: Books=1000, Quotes=100
+2026-10-06 19:06:27 [INFO] [root] Validation: Valid=1100, Rejected=0
+2026-10-06 19:06:27 [INFO] [root] Deduplication: Duplicates Found=1
+2026-10-06 19:06:27 [INFO] [root] Final Cleaned Dataset: 1099 records in C:\Users\DURGA CHAKRI\OneDrive\Desktop\Realisieren Technologies\scraping_assignment\output\final_dataset.csv
+2026-10-06 19:06:27 [INFO] [root] ==============================================================
